@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warhammer Guide</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="Warhammer-40000-Logo.jpg" id="logo" class="column is-half is-offset-one-quarter">
+
+    <div class="container">
+        <div class="columns">
+            <div class="column is-6">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Score Keeper
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                            <p class="subtitle">Use the buttons below to keep score</p>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1ButtonPlus" class="is-small is-success button card-footer-item">+1 Player
+                            One</button>
+                        <button id="p1ButtonMinus" class="is-small is-danger button card-footer-item">-1 Player
+                            One</button>
+                        <button id="p2ButtonPlus" class="is-small is-success button card-footer-item">+1 Player
+                            Two</button>
+                        <button id="p2ButtonMinus" class="is-small is-danger button card-footer-item">-1 Player
+                            Two</button>
+                        <button id="reset" class="is-small is-info button card-footer-item">Game Over</button>
+                    </footer>
+                </div>
+            </div>
+            <div class="column is-half">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Dice Randomizer
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="title is-1">Roll a <select name="" id="die">
+                                    <option value="4">4</option>
+                                    <option value="6">6</option>
+                                    <option value="8">8</option>
+                                    <option value="10">10</option>
+                                    <option value="12">12</option>
+                                    <option value="20">20</option>
+                                </select> sided die</h1>
+                            <p class="subtitle">Your roll is <span id="rollDisplay"> </span></p>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="diceBtn" class="is-small is-link button card-footer-item">Roll</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="column has-text-centered">
+        <div class="content" id="phases">
+            <h2>Phases</h2>
+            <h3>Movement</h3>
+            <p>Move any units that are capable of doing so</p>
+            <h3>Psychic</h3>
+            <p>Psykers can use powerful mental abilities</p>
+            <ul>
+                <ol><b>Psychic Sequence</b>
+                    <li>Choose psyker and power</li>
+                    <li>Make Psychic test</li>
+                    <li>Enemy takes Deny the Witch test</li>
+                    <li>Resolve psychic power</li>
+                </ol>
+            </ul>
+            <h3>Shooting</h3>
+            <p>Your units may shoot enemy units</p>
+            <h3>Charge</h3>
+            <p>Your units may move into close combat against enemy units</p>
+            <h3>Fight</h3>
+            <p>Both players' units pile in and attack with melee weapons</p>
+            <h3>Morale</h3>
+            <p>Test the courage of depleted units</p>
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+    <!--     <div class="content is-large">
+        
+        <h2>Phase Order</h2>
+        <ul>
+            <li>Movement</li>
+            <li>Psychic</li>
+            <li>Shooting</li>
+            <li>Charge</li>
+            <li>Fight</li>
+            <li>Morale</li>
+        </ul>
+        <h2>Wound Roll</h2>
+        <ul>
+            <li>S 2x T = 2+</li>
+            <li>S &gt T = 3+ </li>
+            <li>S = T = 4+</li>
+            <li>S &lt T = 5+</li>
+            <li>S 1/2 T = 6+</li>
+        </ul>
+        <div>
+            <h3>Roll to Hit</h3>
+            <p>Roll over WS of your own to hit the enemy</p>
+            <h3>Roll to Wound</h3>
+            <p>S compared to enemy models T</p>
+            <h3>Saving Throw</h3>
+            <p>Roll less than or equal to saving throw for the attack hits, account for AP of enemy</p>
+            <h3>Morale</h3>
+            <p>Roll under Ld</p>
+            <h3>Shooting</h3>
+            <p>Roll over BS</p>
+        </div>
+    </div> -->
+    <script src="app.js"></script>
+</body>
+
+</html>
